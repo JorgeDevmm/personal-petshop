@@ -1,12 +1,14 @@
 :root {
-  --negro: #000000;
+  --negro: #222222;
   --gris: #e1e1e1;
   --primario: #ffffec;
   --blanco: #fff;
   --celeste-pastel: #84b6f4;
   --verde-pastel: #77dd77;
   --verde-pastel-intenso: #42ab49;
-  --amarillo-pastel: #fdfd96;
+  --anaranjado-claro: #f0a83e;
+
+  --fuente-principal: 'Roboto', sans-serif;
 }
 
 html {
@@ -17,4 +19,60 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  font-size: 1.4rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--negro);
+}
+
+.barra-superior__ofertas {
+  font-size: 1.2rem;
+  color: var(--blanco);
+}
+
+.barra-superior__regional {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.barra-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--anaranjado-claro);
+}
+
+.barra-principal__imagen {
+  width: 120rem;
+  height: auto;
+}
+.barra-principal__enlaces {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.barra-principal__enlace {
+  font-size: 1.8rem;
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+/* header */
+.banner__imagen {
+  width: 100%;
 }

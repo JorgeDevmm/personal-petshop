@@ -4,39 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>petshop</title>
   </head>
   <body>
     <header class="header">
       <div class="barra-superior">
-        <p>Grandes ofertas en comederos</p>
+        <p class="barra-superior__ofertas">Grandes ofertas en comederos</p>
 
-        <ul>
-          <li><a href="#">Español</a></li>
-          <li><a href="#">$ARG</a></li>
+        <ul class="barra-superior__regional">
+          <li><a class="barra-superior__enlace" href="#">Español</a></li>
+          <li><a class="barra-superior__enlace" href="#">$ARG</a></li>
         </ul>
       </div>
 
       <div class="barra-principal">
-        <div>
+        <div class="barra-principal__logo">
           <img src="img/logo.png" alt="logo" />
         </div>
 
         <nav>
-          <ul>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Pets</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contactanos</a></li>
+          <ul class="barra-principal__enlaces">
+            <li><a class="barra-principal__enlace" href="#">Categorías</a></li>
+            <li><a class="barra-principal__enlace" href="#">Pets</a></li>
+            <li><a class="barra-principal__enlace" href="#">Nosotros</a></li>
+            <li><a class="barra-principal__enlace" href="#">Contactanos</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section>
-        <img src="img/banner.png" alt="" />
+      <section class="banner">
+        <img class="banner__imagen" src="img/banner.png" alt="banner" />
       </section>
       <section></section>
     </main>
