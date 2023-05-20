@@ -3,6 +3,7 @@
   --gris: #e1e1e1;
   --primario: #ffffec;
   --blanco: #fff;
+  --marrron: #3c2313;
   --celeste-pastel: #84b6f4;
   --verde-pastel: #77dd77;
   --verde-pastel-intenso: #42ab49;
@@ -30,35 +31,61 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+
 .barra-superior {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--negro);
+  display: none;
 }
 
-.barra-superior__ofertas {
-  font-size: 1.2rem;
-  color: var(--blanco);
-}
+@media (min-width: 720px) {
+  .barra-superior {
+    display: flex;
+    padding: 0 8rem;
+    justify-content: space-between;
+    background-color: var(--negro);
+  }
 
-.barra-superior__regional {
-  display: flex;
-  gap: 2rem;
-  list-style-type: none;
-  text-decoration: none;
+  .barra-superior__ofertas {
+    font-size: 1.5rem;
+    color: var(--blanco);
+  }
+
+  .barra-superior__regional {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .barra-superior__enlace {
+    color: var(--blanco);
+    text-decoration: none;
+  }
 }
 
 .barra-principal {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem;
   background-color: var(--anaranjado-claro);
 }
 
+.barra-principal__logo {
+  display: flex;
+}
+
 .barra-principal__imagen {
-  width: 120rem;
+  width: 2rem;
   height: auto;
 }
+
+.barra-principal__heading {
+  color: var(--blanco);
+}
+.barra-principal__heading span {
+  color: var(--marrron);
+}
+
 .barra-principal__enlaces {
   display: flex;
   gap: 2rem;
