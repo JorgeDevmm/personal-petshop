@@ -1,0 +1,20 @@
+:root {
+  --negro: #000000;
+  --gris: #e1e1e1;
+  --primario: #ffffec;
+  --blanco: #fff;
+  --celeste-pastel: #84b6f4;
+  --verde-pastel: #77dd77;
+  --verde-pastel-intenso: #42ab49;
+  --amarillo-pastel: #fdfd96;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
