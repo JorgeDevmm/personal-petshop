@@ -32,37 +32,37 @@ body {
   margin: 0 auto;
 }
 
-.barra-superior {
+.header-superior {
   display: none;
 }
 
 @media (min-width: 720px) {
-  .barra-superior {
+  .header-superior {
     display: flex;
     padding: 0 8rem;
     justify-content: space-between;
     background-color: var(--negro);
   }
 
-  .barra-superior__ofertas {
+  .header-superior__ofertas {
     font-size: 1.5rem;
     color: var(--blanco);
   }
 
-  .barra-superior__regional {
+  .header-superior__regional {
     display: flex;
     gap: 2rem;
     list-style-type: none;
     text-decoration: none;
   }
 
-  .barra-superior__enlace {
+  .header-superior__enlace {
     color: var(--blanco);
     text-decoration: none;
   }
 }
 
-.barra-principal {
+.header-principal {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,36 +70,38 @@ body {
   background-color: var(--anaranjado-claro);
 }
 
-.barra-principal__logo {
+.header-principal__logo {
   display: flex;
 }
 
-.barra-principal__imagen {
+.header-principal__imagen {
   width: 2rem;
   height: auto;
 }
 
-.barra-principal__heading {
+.header-principal__heading {
   color: var(--blanco);
 }
-.barra-principal__heading span {
+.header-principal__heading span {
   color: var(--marrron);
 }
 
-.barra-principal__enlaces {
+.header-menu__flex {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
   list-style-type: none;
 }
 
-.barra-principal__enlace {
+.header-menu__enlace {
   font-size: 1.8rem;
   color: var(--blanco);
   text-decoration: none;
 }
 
 /* header */
-.banner__imagen {
-  width: 100%;
+.banner {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  height: 50rem;
 }
