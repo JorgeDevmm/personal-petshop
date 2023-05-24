@@ -34,7 +34,7 @@ body {
 }
 
 .contenedor--footer {
-  max-width: 150rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ body {
   display: none;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .header-superior {
     display: flex;
     padding: 0 8rem;
@@ -96,28 +96,47 @@ body {
   color: var(--anaranjado-claro);
 }
 
-.header-menu__flex {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  list-style-type: none;
-}
+@media (min-width: 768px) {
+  .header-menu__flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    list-style-type: none;
+  }
 
-.header-menu__enlace {
-  font-size: 1.8rem;
-  color: var(--blanco);
-  text-decoration: none;
+  .header-menu__enlace {
+    font-size: 1.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+  }
 }
 
 /* header */
 .banner {
   background-image: url(../img/banner.png);
-  background-size: cover;
-  background-position: center;
+  background-position: left center;
+  background-size: left cover;
   background-repeat: no-repeat;
   height: 75rem;
   position: relative;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-position: left center;
+  }
+}
+/* @media (min-width: 480px) {
+  .banner {
+    background-position: center;
+  }
+} */
+
+@media (min-width: 992px) {
+  .banner {
+    background-position: center;
+  }
 }
 
 .banner__contenido {
@@ -185,11 +204,13 @@ body {
 
 /* productos */
 
-.productos {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 5rem;
+@media (min-width: 768px) {
+  .productos {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
 }
 
 .producto {
@@ -245,13 +266,21 @@ body {
 .formulario__correo,
 .formulario__telefono {
   height: 4.8rem;
-  width: 45rem;
+  width: 35rem;
   border-radius: 1.5rem;
   background-color: var(--marron);
   font-size: 1.2rem;
   padding-left: 1.5rem;
   color: var(--blanco);
   border: none;
+}
+
+@media (min-width: 768px) {
+  .formulario__nombre,
+  .formulario__correo,
+  .formulario__telefono {
+    width: 45rem;
+  }
 }
 
 .formulario__telefono {
@@ -287,10 +316,24 @@ body {
 .suscripcion {
   background-color: var(--anaranjado-claro);
   display: flex;
-  justify-content: space-between;
-  height: 7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15rem;
   padding-left: 2rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .suscripcion {
+    background-color: var(--anaranjado-claro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
 }
 
 .suscripcion__contenido {
@@ -305,8 +348,14 @@ body {
 
 .suscripcion__texto {
   color: var(--blanco);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .suscripcion__texto {
+    font-size: 2.5rem;
+  }
 }
 
 .suscripcion__busqueda {
@@ -317,13 +366,39 @@ body {
 
 .suscripcion__correo {
   height: 4.8rem;
-  width: 40rem;
+  width: 20rem;
   border-radius: 1.5rem;
   background-color: var(--blanco);
   font-size: 1.2rem;
   padding-left: 1.5rem;
   color: var(--blanco);
   border: none;
+}
+
+@media (min-width: 768px) {
+  .suscripcion__correo {
+    height: 4.8rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    background-color: var(--blanco);
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    color: var(--blanco);
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .suscripcion__correo {
+    height: 4.8rem;
+    width: 40rem;
+    border-radius: 1.5rem;
+    background-color: var(--blanco);
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    color: var(--blanco);
+    border: none;
+  }
 }
 
 .suscripcion__envio {
@@ -346,7 +421,16 @@ body {
 
 .footer__flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__localidad,
@@ -375,9 +459,11 @@ body {
   font-size: 1.5rem;
 }
 
-.footer__logo {
-  display: flex;
-  align-items: center;
+@media (min-width: 768px) {
+  .footer__logo {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-barra-inferior {
