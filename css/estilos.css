@@ -1,8 +1,9 @@
 :root {
   --negro: #222222;
   --gris: #666666;
+  --gris-claro: #8a8787;
   --primario: #ffffec;
-  --blanco: #fff;
+  --blanco: #ffffff;
   --marron: #3c2313;
   --celeste-pastel: #84b6f4;
   --verde-pastel: #77dd77;
@@ -125,7 +126,7 @@ body {
 .banner__heading {
   background-color: var(--blanco);
   display: inline-block;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   font-weight: 400;
   font-size: 5.7rem;
   border-radius: 1rem;
@@ -158,15 +159,17 @@ body {
 
 .destacados__imagen {
   height: 10rem;
+  margin-bottom: 1rem;
 }
 
 .destacados__heading {
   color: var(--marron);
   font-size: 6rem;
+  margin-top: 0;
 }
 
 .destacados__texto {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: var(--gris);
   margin-top: 0;
 }
@@ -177,6 +180,7 @@ body {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .producto {
@@ -207,4 +211,64 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 0;
+}
+
+/* contactanos */
+.contactanos {
+  display: flex;
+  flex-direction: column;
+}
+.contactanos__heading {
+  text-align: center;
+  color: var(--marron);
+  font-size: 3rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.formulario__nombre,
+.formulario__correo,
+.formulario__telefono {
+  height: 4.8rem;
+  width: 45rem;
+  border-radius: 1.5rem;
+  background-color: var(--marron);
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  color: var(--blanco);
+  border: none;
+}
+
+.formulario__telefono {
+  margin-bottom: 2rem;
+}
+
+.botones {
+  display: flex;
+  gap: 2rem;
+}
+
+.botones__resetear,
+.botones__enviar {
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 2rem 3.5rem;
+  height: 4rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+}
+
+.botones__resetear {
+  background-color: var(--gris-claro);
+  color: var(--blanco);
+}
+.botones__enviar {
+  background-color: var(--anaranjado-claro);
+  color: var(--blanco);
 }
