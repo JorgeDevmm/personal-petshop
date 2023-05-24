@@ -145,7 +145,7 @@ body {
   text-decoration: none;
   color: var(--blanco);
   padding: 2rem 3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-radius: 1rem;
 }
 
@@ -217,6 +217,7 @@ body {
 .contactanos {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10rem;
 }
 .contactanos__heading {
   text-align: center;
@@ -250,7 +251,7 @@ body {
 
 .botones {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .botones__resetear,
@@ -258,8 +259,8 @@ body {
   display: flex;
   align-items: center;
   border: 0;
-  padding: 2rem 3.5rem;
-  height: 4rem;
+  padding: 2rem 5rem;
+  height: 4.8rem;
   border-radius: 5rem;
   font-size: 1.6rem;
 }
@@ -270,5 +271,60 @@ body {
 }
 .botones__enviar {
   background-color: var(--anaranjado-claro);
+  color: var(--blanco);
+}
+
+/* suscripción */
+.suscripcion {
+  background-color: var(--anaranjado-claro);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
+.suscripcion__contenido {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.suscripcion__imagen {
+  /* padding-left: 2rem; */
+}
+
+.suscripcion__texto {
+  color: var(--blanco);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.suscripcion__busqueda {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.suscripcion__correo {
+  height: 4.8rem;
+  width: 40rem;
+  border-radius: 1.5rem;
+  background-color: var(--blanco);
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  color: var(--blanco);
+  border: none;
+}
+
+.suscripcion__envio {
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 2rem 3.5rem;
+  height: 4rem;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  background-color: var(--marron);
   color: var(--blanco);
 }
