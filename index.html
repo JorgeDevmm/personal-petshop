@@ -80,7 +80,7 @@
     <section class="banner">
       <div class="banner__contenido">
         <h2 class="banner__heading">¡Es un placer tenerte aquí!</h2>
-        <p class="banner__texto">¡Comederos den descuento</p>
+        <p class="banner__texto">¡Comederos en descuento</p>
         <a class="banner__enlace" href="">COMEDEROS</a>
       </div>
     </section>
@@ -182,33 +182,47 @@
       </div>
     </section>
 
-    <footer>
-      <div>
-        <div>
-          <div>
-            <img src="img/localidad.svg" alt="imagen-localidad" />
-            <h3>Localidad</h3>
-            <p>Calle - provincia</p>
+    <footer class="footer">
+      <div class="footer__flex contenedor contenedor--footer">
+        <div class="footer__informacion">
+          <div class="footer__localidad">
+            <img
+              class="footer__imagen"
+              src="img/localidad.svg"
+              alt="imagen-localidad"
+            />
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Localidad</h3>
+              <p class="footer__texto">Calle - provincia</p>
+            </div>
           </div>
-          <div>
+          <div class="footer__telefono">
             <img src="img/telefono.svg" alt="imagen-telefono" />
-            <h3>Teléfono</h3>
-            <p>Número de teléfono</p>
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Teléfono</h3>
+              <p class="footer__texto">Número de teléfono</p>
+            </div>
           </div>
-          <div>
+          <div class="footer__correo">
             <img src="img/correo-electronico.svg" alt="" />
-            <h3>Correo Electrónico</h3>
-            <p>Dirección de correo</p>
+            <div class="footer__descripcion">
+              <h3 class="footer__heading">Correo Electrónico</h3>
+              <p class="footer__texto">Dirección de correo</p>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="footer__logo">
           <div class="header-principal__logo">
             <img
               class="header-principal__imagen"
               src="img/cat.svg"
               alt="logo-cat"
             />
-            <h1 class="header-principal__heading"><span>Front</span>Cat&Dog</h1>
+            <h1
+              class="header-principal__heading header-principal__heading--orange"
+            >
+              Front<span>Cat&Dog</span>
+            </h1>
             <img
               class="header-principal__imagen"
               src="img/dog.svg"
@@ -217,8 +231,10 @@
           </div>
         </div>
       </div>
-      <div>
-        <p>Todos los derechos reservados Front End</p>
+      <div class="footer-barra-inferior">
+        <p class="footer-barra-inferior__texto">
+          Todos los derechos reservados Front End
+        </p>
       </div>
     </footer>
   </body>
